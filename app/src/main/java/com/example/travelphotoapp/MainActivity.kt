@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
             var idCurrentImageInt = this.resources.getIdentifier(idCurrentImageString,"id",packageName)
 
             image = findViewById(idCurrentImageInt)
-            image.alpha = 0f
+            image.alpha = 0f  //makes invisible
 
-            currentImage = (currentImage-1)%35  //after 34th pic, it returns to 0
+            currentImage = (35+currentImage-1)%35  //after 34th pic, it returns to 0
             var idImageToShowString = "imageView$currentImage"    //image to show
             var idImageToShowInt = this.resources.getIdentifier(idImageToShowString,"id",packageName)
 
