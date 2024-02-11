@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             image = findViewById(idCurrentImageInt)
             image.alpha = 0f
 
-            currentImage = (35+currentImage+1)%35  //after 34th pic, it returns to 0
+            currentImage = (currentImage-1)%35  //after 34th pic, it returns to 0
             var idImageToShowString = "imageView$currentImage"    //image to show
             var idImageToShowInt = this.resources.getIdentifier(idImageToShowString,"id",packageName)
 
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 image = findViewById(idCurrentImageInt)
                 image.alpha = 0f
 
-                currentImage = (35+currentImage-1) %35
+                currentImage = (35+currentImage+1) %35
                 var idImageToShowString = "imageView$currentImage"
                 var idImageToShowInt =
                     this.resources.getIdentifier(idImageToShowString, "id", packageName)

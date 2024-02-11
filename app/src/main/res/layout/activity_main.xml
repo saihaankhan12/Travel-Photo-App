@@ -377,6 +377,17 @@
             app:srcCompat="@drawable/pic31" />
 
         <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+            android:alpha="0"
+            app:srcCompat="@drawable/pic31" />
+
+        <ImageView
             android:id="@+id/imageView32"
             android:layout_width="match_parent"
             android:layout_height="300dp"
@@ -408,7 +419,6 @@
             app:layout_constraintVertical_bias="0.498"
             android:alpha="0"
             app:srcCompat="@drawable/pic34" />
-
 
 
 
